@@ -1,0 +1,13 @@
+.navbar{
+	background-color: #F49239  !important;
+	font-family: Adobe Hebrew;
+}
+.navbar-brand{
+	color: #151515;
+	font-weight: bolder;
+	font-size: 1.3em;
+}
+.navbar .nav-link{
+	margin: 0 auto;
+	color:  #151515 !important;
+}
