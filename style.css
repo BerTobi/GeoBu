@@ -1,13 +1,23 @@
 .navbar{
-	background-color: #F49239  !important;
-	font-family: Adobe Hebrew;
+	background-color: #00ccff  !important;
+	font-family: High Tower Text;
+	font-size: 30;
 }
 .navbar-brand{
-	color: #151515;
+	color: #ffff	;
 	font-weight: bolder;
 	font-size: 1.3em;
 }
 .navbar .nav-link{
 	margin: 0 auto;
-	color:  #151515 !important;
+	color:  #ffff !important;
 }
+body {
+	overflow: hidden; /* Hide scrollbars */
+  }
+  .boton
+  {
+  position : absolute;
+  right : 35;
+  top : 650px;
+  }
