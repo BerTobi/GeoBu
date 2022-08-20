@@ -17,7 +17,15 @@ body {
   }
   .boton
   {
-  position : absolute;
-  right : 35;
-  top : 650px;
+  position : fixed;
+  background-color: transparent;
+  border-color: transparent;
+  }
+  .boton#boton1{
+  right: 0px;
+  bottom: 50px;
+  }
+    .boton#boton2{
+  right: 15px;
+  bottom: 150px;
   }
