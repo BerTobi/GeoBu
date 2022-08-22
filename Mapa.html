@@ -16,18 +16,26 @@
           <span class="navbar-toggler-icon"></span></button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-              <a class="nav-link" href="#">Features</a>
-              <a class="nav-link" href="#">Pricing</a>
-              <a class="nav-link disabled">Disabled</a>
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              <a class="nav-link" href="#">Catalogo</a>
+              <form class="nav-link">
+                Dispositivos:
+                <select onmousedown="this.value='';" onchange="jsFunction(this.value);">
+                <option selected="true" disabled="disabled">seleccione localizador  </option>
+                <option value="1">Hija</option>
+                <option value="2">Abuelo</option>
+                <option value="3">Abuela</option>
+                </select>
+                <a id="presentacion" class="nav-link" href="GeoBu_Presentacion/geobupresentacion.html">¿Que es GeoBu?</a>
+              </form>
             </div>
           </div>
         </div>
       </nav>
     </div>
   <button id="boton1" type="button" class="boton" onclick="ubicarte()"><img src="imagen/boton ubicar.png" width="120" height="108" ></button>
-  <button id="boton2" type="button" class="boton" onclick="ubicarPersona()"><img src="imagen/boton ubicar persona.png" width="90" height="81" ></button>
-  <iframe id="mapa" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-58.70497226715088%2C-34.4461669196355%2C-58.69789123535157%2C-34.442105763118256&amp;layer=cyclosm" style="width:100%;height:91%; border: 1px solid black"></iframe><br/>
+  <button id="boton2" type="button" class="boton" onclick="ubicarPersonaSeleccionada()"><img src="imagen/boton ubicar persona.png" width="90" height="81" ></button>
+  <iframe id="mapa" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-71.01562500000001%2C-39.29179704377487%2C-52.66845703125%2C-31.062345409804408&amp;layer=mapnik" style="width:100%;height:91%; border: 1px solid black"></iframe><br/>
   
     <!-- 
      The `defer` attribute causes the callback to execute after the full HTML

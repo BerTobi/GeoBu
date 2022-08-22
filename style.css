@@ -20,6 +20,7 @@ body {
   position : fixed;
   background-color: transparent;
   border-color: transparent;
+  border-radius: 50%;
   }
   .boton#boton1{
   right: 0px;
@@ -29,3 +30,10 @@ body {
   right: 15px;
   bottom: 150px;
   }
+
+.navbar .nav-link#presentacion{
+  position: fixed;
+  float: right;
+  right: 20px;
+  top: 8px;
+}
