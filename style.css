@@ -19,8 +19,8 @@ body {
   {
   position : fixed;
   background-color: transparent;
-  border-color: transparent;
-  border-radius: 50%;
+  border: none;
+  outline: 0 !important;
   }
   .boton#boton1{
   right: 0px;
@@ -28,7 +28,7 @@ body {
   }
     .boton#boton2{
   right: 15px;
-  bottom: 150px;
+  bottom: 165px;
   }
 
 .navbar .nav-link#presentacion{
@@ -36,4 +36,7 @@ body {
   float: right;
   right: 20px;
   top: 8px;
+}
+#casilla{
+  border-radius: 10px;
 }
