@@ -28,12 +28,13 @@
           <div class="navbar-nav">
             <a class="nav-link active" aria-current="page" href="#">Inicio</a>
             <a class="nav-link" href="#">Catalogo</a>
-            <form class="nav-link">
-              <select id="casilla" onmousedown="this.value='';" onchange="jsFunction(this.value);">
+            <form class="nav-link"> 
+              <select id="casilla" onmousedown="this.value='';" onchange="ubicarPersonaSeleccionada(this.value);">
                 <option selected="true" disabled="disabled">Dispositivos:</option>
-                <option value="1">Hija</option>
+                <option value="0">Rotary</option>
+                <option value="1">Madre</option>
                 <option value="2">Abuelo</option>
-                <option value="3">Abuela</option>
+                <option value="3">Hija</option>
               </select>
               <a id="presentacion" class="nav-link" href="GeoBu_Presentacion/geobupresentacion.html">¿Que es GeoBu?</a>
             </form>
@@ -41,7 +42,7 @@
         </div>
       </div>
     </nav>
-    <div id="myMap" style="height: 600px"></div>
+    <div id="myMap"></div>
   </div>
 
   <button id="boton1" type="button" class="boton" onclick="ubicarte()"><img src="imagen/boton ubicar.png" width="120"
