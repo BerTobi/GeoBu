@@ -1,6 +1,5 @@
 .navbar{
 	background-color: #00ccff  !important;
-	font-family: High Tower Text;
 	font-size: 30;
 }
 .navbar-brand{
@@ -9,7 +8,6 @@
 	font-size: 1.3em;
 }
 .navbar .nav-link{
-  font-family: High Tower Text;
 	margin: 0 auto;
 	color:  #ffff !important;
 }
@@ -51,13 +49,20 @@ body {
   height: 700;
 }
 #informe{
+  position: inherit;
   left: 50px;
-  bottom: 10px;
-  width=480px;
-  height=108px;
+  bottom: 10px; 
   border: 5px solid #000;
   border-radius: 35px;
 }
 .banner-content{
   background-color: transparent;
+}
+#lista{
+  position: fixed;
+  float: right;
+  top: 90px;
+  right: 10px;
+  outline: 0 !important;
+  z-index: 1;
 }
