@@ -7,6 +7,7 @@ Localizaciones[3]={nombre:"Hija", lat: -34.4781203,lng: -58.6493504, zoom: 17}
 Localizaciones[4]={nombre:"Hijo", lat: -34.4781203,lng: -58.6493504, zoom: 17}
 var valornumerico
 var marcador
+var abueloubicado = 0;
 let myMap = L.map('myMap').setView([-38.06, -58.26], 6)
 
 function change(iconID) {
@@ -61,12 +62,14 @@ function ubicarte(){
 }
 function ubicarPersonaSeleccionada(valor){
   valornumerico=valor
-  if (valor==2) {
+  if (valor==2 && abueloubicado == 0) {
     agregarmarcador()
     myMap.flyTo([Localizaciones[2].lat, Localizaciones[2].lng], Localizaciones[2].zoom)
     PersonaEnMovimiento()
+    ubicadoubicado = 1
   }
   else{
+ 
     myMap.flyTo([Localizaciones[valornumerico].lat, Localizaciones[valornumerico].lng], Localizaciones[valornumerico].zoom)
     L.marker([Localizaciones[valornumerico].lat, Localizaciones[valornumerico].lng], { icon: iconFamiliarMarker }).addTo(myMap)
   }
@@ -90,11 +93,13 @@ function quitarmarcador(){
   Localizaciones[2].lng += 0.0011203
 }
 function PersonaEnMovimiento(){
+  if(abueloubicado==0){
   setInterval(() => {
     quitarmarcador()
     agregarmarcador()
     myMap.flyTo([Localizaciones[2].lat, Localizaciones[2].lng], Localizaciones[2].zoom)
-  }, 7000)
+  }, 7000)}
+      
 }
 
 

@@ -60,7 +60,6 @@ body {
 }
 #lista{
   position: fixed;
-  float: right;
   top: 90px;
   right: 10px;
   outline: 0 !important;
