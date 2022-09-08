@@ -9,11 +9,11 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
     integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
     crossorigin="" />
-    <style>
-      * {
-        font-family: Arial, Helvetica, sans-serif;
-      }
-    </style>
+  <style>
+    * {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  </style>
 </head>
 
 <body>
@@ -28,21 +28,24 @@
           <div class="navbar-nav">
             <a class="nav-link active" aria-current="page" href="#">Inicio</a>
             <a class="nav-link" href="#">Catalogo</a>
-            <form id="lista" class="nav-link"> 
-              <select id="casilla" onmousedown="this.value='';" onchange="ubicarPersonaSeleccionada(this.value);">
-                <option selected="true" disabled="disabled">Dispositivos:</option>
-                <option value="0">Rotary</option>
-                <option value="1">Madre</option>
-                <option value="2">Abuelo</option>
-                <option value="3">Hija</option>
-                <option value="4">Hijo</option>
-              </select>
-              <a id="presentacion" class="nav-link" href="https://docs.google.com/document/d/1tdjMjimswCMXNMdLQZGN3QMzV_9Dlw_xmYwI6dvVN54/edit?usp=sharing">¿Que es GeoBu?</a>
-            </form>
+            <a id="presentacion" class="nav-link"
+              href="https://docs.google.com/document/d/1tdjMjimswCMXNMdLQZGN3QMzV_9Dlw_xmYwI6dvVN54/edit?usp=sharing">¿Que
+              es GeoBu?</a>
+
           </div>
         </div>
       </div>
     </nav>
+    <form id="lista" class="nav-link">
+      <select id="casilla" onmousedown="this.value='';" onchange="ubicarPersonaSeleccionada(this.value);">
+        <option selected="true" disabled="disabled">Dispositivo</option>
+        <option value="0">Rotary</option>
+        <option value="1">Madre</option>
+        <option value="2">Abuelo</option>
+        <option value="3">Hija</option>
+        <option value="4">Hijo</option>
+      </select>
+    </form>
     <div id="myMap"></div>
   </div>
 
