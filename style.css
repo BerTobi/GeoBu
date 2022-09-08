@@ -1,64 +1,81 @@
-.navbar{
-	background-color: #00ccff  !important;
-	font-size: 30;
+.navbar {
+  background-color: #00ccff !important;
+  font-size: 30;
 }
-.navbar-brand{
-	color: #ffff	;
-	font-weight: bolder;
-	font-size: 1.3em;
+
+.navbar-brand {
+  color: #ffff;
+  font-weight: bolder;
+  font-size: 1.3em;
 }
-.navbar .nav-link{
-	margin: 0 auto;
-	color:  #ffff !important;
+
+.navbar .nav-link {
+  margin: 0 auto;
+  color: #ffff !important;
 }
+
 body {
-	overflow: hidden; /* Hide scrollbars */
-  }
-  #myMap{
-    height: 100%;
-    width: 100%;
-    z-index: 0;
-  }
-  .boton
-  {
-  position : fixed;
+  overflow: hidden;
+  /* Hide scrollbars */
+}
+
+#myMap {
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+
+.boton {
+  position: fixed;
   background-color: transparent;
   border: none;
   outline: 0 !important;
-  }
-  .boton#boton1{
+}
+
+.boton#boton1 {
   right: 0px;
   bottom: 50px;
-  }
-    .boton#boton2{
+}
+
+.boton#boton2 {
   right: 15px;
   bottom: 165px;
-  }
+}
 
-.navbar .nav-link#presentacion{
+.navbar .nav-link#presentacion {
   position: fixed;
   float: right;
   right: 20px;
   top: 8px;
 }
-#casilla{
+
+#casilla {
   border-radius: 10px;
+  padding: 10px;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.3);
 }
-#presentacion2{
+
+#presentacion2 {
   width: 100%;
   height: 700;
 }
-#informe{
+
+#informe {
   position: inherit;
   left: 50px;
-  bottom: 10px; 
+  bottom: 10px;
   border: 5px solid #000;
   border-radius: 35px;
 }
-.banner-content{
+
+.banner-content {
   background-color: transparent;
 }
-#lista{
+
+#lista {
   position: fixed;
   top: 90px;
   right: 10px;
