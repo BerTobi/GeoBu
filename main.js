@@ -92,6 +92,11 @@ function ubicarPersonaSeleccionada(valor){
 function redirigir(){
   location.href = 'https://docs.google.com/document/d/1LBwLHVz0QG-0d4m2BbH3Q6RZwS_5odTy4TBWT5RcCi8/edit?usp=sharing';
 }
+function vistaabuelo(){
+  if(valornumerico==2){
+  myMap.flyTo([Localizaciones[2].lat, Localizaciones[2].lng], Localizaciones[2].zoom)
+    }
+}
 
 function PersonaEnMovimiento(){
   var movimiento = L.marker([Localizaciones[valornumerico].lat, Localizaciones[valornumerico].lng], { icon: iconAbueloMarker }).addTo(myMap)
@@ -109,12 +114,64 @@ function quitarmarcador(){
 }
 function PersonaEnMovimiento(){
   if(abueloubicado==0){
-  setInterval(() => {
+  setTimeout(() => {
     quitarmarcador()
     agregarmarcador()
-    myMap.flyTo([Localizaciones[2].lat, Localizaciones[2].lng], Localizaciones[2].zoom)
+    vistaabuelo()
+    setTimeout(() => {
+    quitarmarcador()
+    agregarmarcador()
+    vistaabuelo()
+    setTimeout(() => {
+    quitarmarcador()
+    agregarmarcador()
+    vistaabuelo()
+    setTimeout(() => {
+    quitarmarcador()
+    agregarmarcador()
+    vistaabuelo()
+    setTimeout(() => {
+    quitarmarcador()
+    agregarmarcador()
+    vistaabuelo()
+    setTimeout(() => {
+    quitarmarcador()
+    agregarmarcador()
+    vistaabuelo()
+    setTimeout(() => {
+    quitarmarcador()
+    agregarmarcador()
+    vistaabuelo()
+    setTimeout(() => {
+    quitarmarcador()
+    agregarmarcador()
+    vistaabuelo()
+    setTimeout(() => {
+    quitarmarcador()
+    agregarmarcador()
+    vistaabuelo()
+    setTimeout(() => {
+    quitarmarcador()
+    agregarmarcador()
+    vistaabuelo()
+    setTimeout(() => {
+    quitarmarcador()
+    agregarmarcador()
+    vistaabuelo()
+    setTimeout(() => {
+    quitarmarcador()
+    agregarmarcador()
+    vistaabuelo()
+  }, 7000)
+  }, 7000)
+  }, 7000)
+  }, 7000)
+  }, 7000)
+  }, 7000)
+  }, 7000)
+  }, 7000)
+  }, 7000)
+  }, 7000)
+  }, 7000)
   }, 7000)}
-      
 }
-
-
