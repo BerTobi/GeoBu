@@ -29,7 +29,8 @@ body {
   position: fixed;
   background-color: transparent;
   border: none;
-  outline: 0 !important;
+  outline: 0 !important;s
+
 }
 
 .boton#boton1 {
@@ -38,8 +39,8 @@ body {
 }
 
 .boton#boton2 {
-  right: 15px;
-  bottom: 165px;
+  right: 20px;
+  bottom: 220px;
 }
 
 .navbar .nav-link#presentacion {
@@ -52,15 +53,23 @@ body {
 #casilla {
   border-radius: 10px;
   padding: 10px;
-  font-size: 20px;
+  font-size: 50px;
   outline: none;
   border: none;
   box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.3);
+  height: 150px;
+  width: 300px;
 }
 
-#presentacion2 {
-  width: 100%;
-  height: 700;
+#presentacion {
+  font-size: 30px;
+  color: #ffff;
+  position: fixed;
+  float: right;
+    top: 7px;
+  right: 10px;
+  outline: 0 !important;
+  z-index: 1;
 }
 
 #informe {
