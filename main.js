@@ -22,32 +22,30 @@ L.tileLayer(`https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png`, {
 	maxZoom: 18,
 }).addTo(myMap);
 
-let marker = L.marker([51.5, -0.09]).addTo(myMap)
 
 let iconMarker = L.icon({
     iconUrl: 'imagen/Marker.png',
-    iconSize: [60, 60],
-    iconAnchor: [30, 60]
+    iconSize: [180, 180],
+    iconAnchor: [90, 180]
 })
 let iconAbueloMarker = L.icon({
     iconUrl: 'imagen/abuelomarker.png',
-    iconSize: [60, 100],
-    iconAnchor: [30, 60]
+    iconSize: [180, 280],
+    iconAnchor: [90, 180]
 })
 let iconHijaMarker = L.icon({
     iconUrl: 'imagen/hijamarker.png',
-    iconSize: [60, 100],
-    iconAnchor: [30, 60]
+    iconSize: [180, 280],
+    iconAnchor: [90, 180]
 })
 
 let iconMujerMarker = L.icon({
     iconUrl: 'imagen/Mujermarker.png',
-    iconSize: [60, 100],
-    iconAnchor: [30, 60]
+    iconSize: [180, 280],
+    iconAnchor: [90, 180]
 })
 
 
-let marker2 = L.marker([51.51, -0.09], { icon: iconMarker }).addTo(myMap)
 
 
 navigator.geolocation.getCurrentPosition(
