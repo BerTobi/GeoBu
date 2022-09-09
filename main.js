@@ -29,11 +29,23 @@ let iconMarker = L.icon({
     iconSize: [60, 60],
     iconAnchor: [30, 60]
 })
-let iconFamiliarMarker = L.icon({
-    iconUrl: 'imagen/familiarmarker.png',
+let iconAbueloMarker = L.icon({
+    iconUrl: 'imagen/abuelomarker.png',
     iconSize: [60, 100],
     iconAnchor: [30, 60]
 })
+let iconHijaMarker = L.icon({
+    iconUrl: 'imagen/hijamarker.png',
+    iconSize: [60, 100],
+    iconAnchor: [30, 60]
+})
+
+let iconMujerMarker = L.icon({
+    iconUrl: 'imagen/Mujermarker.png',
+    iconSize: [60, 100],
+    iconAnchor: [30, 60]
+})
+
 
 let marker2 = L.marker([51.51, -0.09], { icon: iconMarker }).addTo(myMap)
 
@@ -68,10 +80,13 @@ function ubicarPersonaSeleccionada(valor){
     PersonaEnMovimiento()
     ubicadoubicado = 1
   }
-  else{
- 
+  else if (valor==1) {
     myMap.flyTo([Localizaciones[valornumerico].lat, Localizaciones[valornumerico].lng], Localizaciones[valornumerico].zoom)
-    L.marker([Localizaciones[valornumerico].lat, Localizaciones[valornumerico].lng], { icon: iconFamiliarMarker }).addTo(myMap)
+    L.marker([Localizaciones[valornumerico].lat, Localizaciones[valornumerico].lng], { icon: iconMujerMarker }).addTo(myMap)
+  }
+  else{
+    myMap.flyTo([Localizaciones[valornumerico].lat, Localizaciones[valornumerico].lng], Localizaciones[valornumerico].zoom)
+    L.marker([Localizaciones[valornumerico].lat, Localizaciones[valornumerico].lng], { icon: iconHijaMarker }).addTo(myMap)
   }
 }
 function redirigir(){
@@ -79,12 +94,12 @@ function redirigir(){
 }
 
 function PersonaEnMovimiento(){
-  var movimiento = L.marker([Localizaciones[valornumerico].lat, Localizaciones[valornumerico].lng], { icon: iconFamiliarMarker }).addTo(myMap)
+  var movimiento = L.marker([Localizaciones[valornumerico].lat, Localizaciones[valornumerico].lng], { icon: iconAbueloMarker }).addTo(myMap)
   myMap.removeLayer(movimiento)
 }
 
 function agregarmarcador(){
-   marcador = new L.marker([Localizaciones[2].lat, Localizaciones[2].lng], { icon: iconFamiliarMarker })
+   marcador = new L.marker([Localizaciones[2].lat, Localizaciones[2].lng], { icon: iconAbueloMarker })
    marcador.addTo(myMap)
 }
 function quitarmarcador(){
