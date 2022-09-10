@@ -72,17 +72,20 @@ function ubicarte(){
 }
 function ubicarPersonaSeleccionada(valor){
   valornumerico=valor
-  if (valor==2 && abueloubicado == 0) {
+  if (valor==2 && abueloubicado == 0) 
+  {
     agregarmarcador()
     myMap.flyTo([Localizaciones[2].lat, Localizaciones[2].lng], Localizaciones[2].zoom)
-    PersonaEnMovimiento()
-    ubicadoubicado = 1
+    caminata = setInterval(PersonaEnMovimiento, 7000);
+    abueloubicado = 1
   }
-  else if (valor==1) {
-    myMap.flyTo([Localizaciones[valornumerico].lat, Localizaciones[valornumerico].lng], Localizaciones[valornumerico].zoom)
-    L.marker([Localizaciones[valornumerico].lat, Localizaciones[valornumerico].lng], { icon: iconMujerMarker }).addTo(myMap)
+  else if (valor==2 && abueloubicado == 2) 
+  {
+    myMap.flyTo([Localizaciones[2].lat, Localizaciones[2].lng], Localizaciones[2].zoom)
+    abueloubicado = 1
   }
   else{
+    if(abueloubicado == 1) abueloubicado = 2
     myMap.flyTo([Localizaciones[valornumerico].lat, Localizaciones[valornumerico].lng], Localizaciones[valornumerico].zoom)
     L.marker([Localizaciones[valornumerico].lat, Localizaciones[valornumerico].lng], { icon: iconHijaMarker }).addTo(myMap)
   }
@@ -111,65 +114,9 @@ function quitarmarcador(){
   Localizaciones[2].lng += 0.0011203
 }
 function PersonaEnMovimiento(){
-  if(abueloubicado==0){
-  setTimeout(() => {
     quitarmarcador()
     agregarmarcador()
-    vistaabuelo()
-    setTimeout(() => {
-    quitarmarcador()
-    agregarmarcador()
-    vistaabuelo()
-    setTimeout(() => {
-    quitarmarcador()
-    agregarmarcador()
-    vistaabuelo()
-    setTimeout(() => {
-    quitarmarcador()
-    agregarmarcador()
-    vistaabuelo()
-    setTimeout(() => {
-    quitarmarcador()
-    agregarmarcador()
-    vistaabuelo()
-    setTimeout(() => {
-    quitarmarcador()
-    agregarmarcador()
-    vistaabuelo()
-    setTimeout(() => {
-    quitarmarcador()
-    agregarmarcador()
-    vistaabuelo()
-    setTimeout(() => {
-    quitarmarcador()
-    agregarmarcador()
-    vistaabuelo()
-    setTimeout(() => {
-    quitarmarcador()
-    agregarmarcador()
-    vistaabuelo()
-    setTimeout(() => {
-    quitarmarcador()
-    agregarmarcador()
-    vistaabuelo()
-    setTimeout(() => {
-    quitarmarcador()
-    agregarmarcador()
-    vistaabuelo()
-    setTimeout(() => {
-    quitarmarcador()
-    agregarmarcador()
-    vistaabuelo()
-  }, 7000)
-  }, 7000)
-  }, 7000)
-  }, 7000)
-  }, 7000)
-  }, 7000)
-  }, 7000)
-  }, 7000)
-  }, 7000)
-  }, 7000)
-  }, 7000)
-  }, 7000)}
+    if(abueloubicado==1){
+      vistaabuelo()
+    }
 }
