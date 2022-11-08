@@ -32,18 +32,50 @@ body {
   position: fixed;
   background-color: transparent;
   border: none;
-  outline: 0 !important;s
+  outline: 0 !important;
 
 }
 
 .boton#boton1 {
-  right: 0px;
+  width: 180px;
+  height: 140px;
+  right: 1px;
   bottom: 50px;
 }
 
 .boton#boton2 {
-  right: 40px;
+  width: 180px;
+  height: 140px;
+  right: 1px;
+  bottom: 190px;
+}
+
+@media (max-width: 1000px) {
+
+.boton#boton1 {
+  width: 350px;
+  height: 300px;
+  right: 1px;
+  bottom: 50px;
+}
+
+.boton#boton2 {
+  width: 350px;
+  height: 310px;
+  right: 1px;
   bottom: 400px;
+    }
+
+    #casilla {
+      border-radius: 10px;
+      padding: 10px;
+      font-size: 100px;
+      outline: none;
+      border: none;
+      box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.3);
+      height: 300px;
+      width: 600px;
+    }
 }
 
 .navbar .nav-link#presentacion {
